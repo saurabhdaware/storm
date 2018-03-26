@@ -16,8 +16,9 @@ This project is still in development mode and there are lot of things we are loo
 1. Clone / Download the directory
 2. Open Command Prompt
 3. Install [npm](https://nodejs.org/) and Angular Client `npm install @angular/cli` (ignore if already installed)
-4. type `ng serve`
-5. Navigate to `http://localhost:4200` in your browser
+4. Type `npm install` to get required node modules
+5. Type `ng serve`
+6. Navigate to `http://localhost:4200` in your browser
 
 ## About Files
 
