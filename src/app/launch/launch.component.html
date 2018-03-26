@@ -1,0 +1,33 @@
+<div class='launch-container w3-animate-opacity' style="animation-duration:1s" id='launch-container'>
+    <app-background></app-background>
+    <div id="countdown" class="timer w3-xlarge w3-card-4"><b>T</b>{{counterVars.sign}} {{counterVars.hr}} : {{counterVars.min}} : {{counterVars.sec}}</div>
+    <div id="altitude" class="w3-large w3-card-4" style="text-align:center"><b>:: Altitude :: <br>{{rocketParams.altitude}}<br><span style="color:#999">meter</span></b></div>
+    <div id="velocity" class="w3-large w3-card-4" style="text-align:center"><b>:: Velocity :: <br>{{rocketParams.velocityInMS}}<br><span style="color:#999">m/s</span></b></div>
+    <div id=rocketAndSmokeFire class="rocketAndSmokeFire">
+        <img class="launch-rocket-image-stage1" id="launch-rocket-image-stage1" src='./assets/gslvstage1.png'>
+        <img class="launch-rocket-image-stage2" id="launch-rocket-image-stage2" src='./assets/gslvstage2.png'>
+        <img class="launch-rocket-image-stage3" id="launch-rocket-image-stage3" src='./assets/gslvstage3.png'>
+        <div class='launch-rocket-image-stage4' id="launch-rocket-image-stage4">
+            <img class="launch-rocket-image-stage4L" id="launch-rocket-image-stage4L" src='./assets/gslvstage4L.png'>
+            <img class="launch-rocket-image-stage4R" id="launch-rocket-image-stage4R" src='./assets/gslvstage4R.png'>
+        </div>
+        <img class="launch-rocket-image-sat" src="./assets/sat.png">
+        <app-smoke *ngIf='rocketParams.altitude<400'></app-smoke>
+        <app-fire></app-fire>
+    </div>
+</div>
+<div class="w3-xlarge w3-animate-top w3-center" id="loadscreen-info" style="animation-duration:1.5s;padding:60px;height:80%;width:60%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;z-index:100;background:rgba(0,0,0,0.7);color:#fff">
+    <div class="w3-row w3-center">
+        Hey There! Seems like a good time to Launch a Rocket!<br><br>
+        <div class="w3-half">
+            ::Weather::<br><div style="height:2px;width:200px;position:relative;left:65px;background-color:#09f"></div>
+            {{weather}}<img src="http://openweathermap.org/img/w/{{weatherIco}}.png"><br>Pressure:{{pressure*100}} Pa<br>Temperature:{{temperature}} K<br>
+        </div>
+        <div class="w3-half">
+                ::Vehicle::<br><div style="height:2px;width:200px;position:relative;left:65px;background-color:#09f"></div>
+                <br><img src="./assets/gslv.png" height=100><br>GSLV MkII
+        </div>
+    </div><br><br>
+    <a class="w3-button w3-circle w3-red w3-xlarge w3-hover-green w3-border w3-border-black" style="padding-top:30px;padding-bottom:30px;" (click)="launchClicked();">Launch</a>
+
+</div>

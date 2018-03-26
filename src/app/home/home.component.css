@@ -1,0 +1,47 @@
+
+.home-main-container{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    background-image: url('assets/earth2.png');
+    background-size:cover;
+    background-position:center;
+}
+.home-blue-overlay{
+    display:inline-block;
+    width:50%;
+    padding-left:63px;
+    padding-right:63px;
+    padding-top:100px;
+    padding-bottom:100px;
+    height:100%;
+    background:rgba(0, 195, 255, 0.47);
+    color:#fff;
+    text-align:center !important;
+    animation-duration:1.3s;
+    border-right:2px solid #222;
+}
+.home-name-textfield{
+    border:1px solid #07f;
+    background:rgba(131, 226, 255, 0.47);
+    font-size:15pt;
+    padding:10px;
+    font-weight:555;
+}
+::placeholder{
+    color:#fff;
+    opacity:0.5;
+    font-size:13pt;
+}
+.button{
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#222;
+    width:300px;
+    color:#09f;
+    cursor:pointer;
+    font-size:15pt;
+}

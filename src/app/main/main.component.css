@@ -1,0 +1,73 @@
+
+.main-container{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    background-image: url('assets/spacecenter1.png');
+    background-size:cover;
+    background-position:center;
+}
+.main-blue-overlay{
+    display:inline-block;
+    width:50%;
+    padding-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+    height:100%;
+    background:rgba(0, 195, 255, 0.47);
+    color:#fff;
+    text-align:center !important;
+    animation-duration:1.3s;
+    border-right:2px solid #222;
+}
+.main-textfield{
+    border:1px solid #07f;
+    background:rgba(255, 255, 255, 0.93);
+    font-size:9pt;
+    height:30px;
+    padding:7px;
+    font-weight:555;
+    width:justify;
+}
+::placeholder{
+    color:#777;
+    opacity:0.5;
+    font-size:9pt;
+}
+.button{
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#222;
+    width:300px;
+    color:#09f;
+    cursor:pointer;
+    font-size:15pt;
+}
+
+.select-rocket-container{
+    height:100%;
+    width:50%;
+    color:#fff;
+    background:rgba(0,0,0,0.5);    
+    position:absolute;
+    right:0;
+    top:0;
+    padding:30px;
+}
+
+.selectRocket{
+    position: relative;
+    height:400px;
+    width:auto;
+    left:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+.initiallyHidden{
+    display:none;
+}

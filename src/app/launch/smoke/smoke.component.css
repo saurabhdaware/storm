@@ -1,0 +1,104 @@
+/* Animations */
+#smokeC {
+    width: 1px; height: 160px;
+    position: absolute;
+    left:55px;
+    right:0;
+    bottom:157px;
+    margin:auto;
+    
+}
+
+#smokeRight {
+    width: 1px; height: 160px;
+    position: absolute;
+    left:100px;
+    right:0;
+    bottom:180px;
+    margin:auto;
+    display:none;
+}
+
+#smokeLeft {
+    width: 1px; height: 160px;
+    position: absolute;
+    left:-20px;
+    right:0;
+    bottom:180px;
+    margin:auto;
+    display:none;
+    
+}
+
+/* smoke balls */
+
+.smoke span { 
+  display: block;
+	position: absolute;
+	top: 235px; right:370px; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 1px solid #000;
+	border-radius: 35px;
+	left: -14px; opacity: 0;
+    transform: scale(0.2);
+    z-index: 101 !important;
+}
+
+.smoke span img{
+    width:400px;
+    height:auto;
+}
+.smoke span .smokeimg{
+    height:250px !important;
+    width:auto !important;
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.1) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, 0px) }
+	100% { opacity: 0; transform: scale(1) translate(10px, -150px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(-10px, -150px) }
+}
+
+@keyframes smokeLeftFrames {
+	0%   { transform: scale(0.1) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, 0px) }
+	90% { opacity: 0.3; transform: scale(1) translate(-400px, -200px) }
+	100% { opacity: 0; transform: scale(1) translate(-400px, -200px) }
+}
+
+@keyframes smokeRightFrames {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+    90% { opacity: 0.3; transform: scale(1) translate(200px, -300px) }
+    100% { opacity: 0; transform: scale(1) translate(200px, -300px) }
+}
+
+.smoke .s0 { animation: smokeLeftFrames 3s 0s  1}
+.smoke .s1 { animation: smokeRightFrames 3s 0.2s 1}
+.smoke .s2 { animation: smokeLeftFrames 3s 0.4s  1}
+.smoke .s3 { animation: smokeRightFrames 3s 0.8s 1}
+.smoke .s4 { animation: smokeLeftFrames 3s 1.2s 1}
+.smoke .s5 { animation: smokeRightFrames 3s 1.6s 1}
+.smoke .s6 { animation: smokeLeftFrames 3s 2.0s 1}
+.smoke .s7 { animation: smokeRightFrames 3s 2.4s 1}
+.smoke .s8 { animation: smokeLeftFrames 3s 2.8s 1}
+.smoke .s9 { animation: smokeRightFrames 3s 3.2s 1}
+
+.smokeC .s0 { animation: smokeL 4s 0s infinite }
+.smokeC .s1 { animation: smokeR 4s 0.4s infinite }
+.smokeC .s2 { animation: smokeL 4s 0.8s infinite }
+.smokeC .s3 { animation: smokeR 4s 1.2s infinite }
+.smokeC .s4 { animation: smokeL 4s 1.6s infinite }
+.smokeC .s5 { animation: smokeR 4s 2s infinite }
+.smokeC .s6 { animation: smokeL 4s 2.4s infinite }
+.smokeC .s7 { animation: smokeR 4s 2.8s infinite }
+.smokeC .s8 { animation: smokeL 4s 3.2s infinite }
+.smokeC .s9 { animation: smokeR 4s 3.6s infinite }

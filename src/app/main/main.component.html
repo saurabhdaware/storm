@@ -1,0 +1,166 @@
+<div class="main-container">
+    <div class="w3-animate-left w3-card-4 main-blue-overlay">
+      <div style="text-align:left;font-size:13pt">
+      <div class='w3-row'>
+          <div class='w3-third'>
+              <label for='name'><b>Launch location:</b></label>              
+          </div>
+          <div class='w3-twothird'>
+              <select class='main-textfield w3-select' id='selectLocation' placeholder='Select Takeoff location'> 
+                <option value='1'>Satish Dhawan, Sriharikota</option>
+              </select>             
+          </div>
+        </div>
+        <br>
+        <div class='w3-row'>
+          <div class='w3-third'>
+              <label for='name'><b>Launch Time:</b></label>              
+          </div>
+          <div class='w3-twothird'>
+              <input class='main-textfield w3-input' id='launch-time' type="time" [(ngModel)]="launchTime" placeholder=''>                   
+          </div>
+        </div>
+        <br>
+        <div class='w3-row'>
+          <div class='w3-third'>
+              <label for='name'><b>Mass of Rocket(kg):</b></label>              
+          </div>
+          <div class='w3-twothird'>
+              <input class='main-textfield w3-input' id='rocketMass' [(ngModel)]="rocketMass" type="number" placeholder='Enter mass of rocket in kg'>              
+          </div>
+        </div>
+        <br>
+        <div class='w3-row'>
+          <div class='w3-third'>
+              <label for='name'><b>Mass of Payload(kg):</b></label>              
+          </div>
+          <div class='w3-twothird'>
+              <input class='main-textfield w3-input' id='payloadMass' [(ngModel)]="payloadMass" type="number" placeholder='Enter mass of payload in kg'>              
+          </div>
+        </div>
+        <br>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>Surface Area(m<sup>2</sup>) :</b></label>              
+            </div>
+            <div class='w3-twothird'>
+                <input class='main-textfield w3-input' id='surfaceArea' [(ngModel)]="surfaceArea" type="number" placeholder='Enter surface area'>              
+            </div>
+        </div>        
+        <br>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>Orbit height(m) :</b></label>              
+            </div>
+            <div class='w3-twothird'>
+                <input class='main-textfield w3-input' id='orbitHeight' [(ngModel)]="orbitHeight" type="number" placeholder='Enter surface area'>              
+            </div>
+        </div>        
+        <br><br>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>.</b></label>              
+            </div>
+            <div class="w3-twothird w3-row" style="text-align:center">
+                <div class='w3-third'>
+                    <label for='name'><b>Thrust(kN)</b></label>              
+                </div>
+                <div class='w3-third'>
+                    <label for='name'><b>Burntime(sec)</b></label>              
+                </div>
+                <div class='w3-third'>
+                    <label for='name'><b>Mass(kg)</b></label>              
+                </div>
+            </div>
+        </div>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>Strap-ons =></b></label>              
+            </div>
+            <div class="w3-row w3-twothird">
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='straponsThrust' type="number" [(ngModel)]="straponsThrust" placeholder='Enter downward force of engines in N'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='straponsBurntime' type="number" [(ngModel)]="straponsBurntime" placeholder='strapons burntime in Seconds'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='straponsMass' type="number" [(ngModel)]="straponsMass" placeholder='Strapons Mass'>              
+                </div>
+            </div>
+        </div>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>1st Stage => </b></label>              
+            </div>
+            <div class='w3-twothird w3-row'>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='firststageThrust' [(ngModel)]="firststageThrust" type="number" placeholder='Enter downward force of engines in N'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='firststageBurntime' [(ngModel)]="firststageBurntime" type="number" placeholder='1st stage burntime in Seconds'>              
+                </div> 
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='firststageMass' [(ngModel)]="firststageMass" type="number" placeholder='1st stage Mass'>              
+                </div> 
+            </div>         
+        </div>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>2nd Stage => </b></label>              
+            </div>
+            <div class='w3-twothird w3-row'>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='secondstageThrust' [(ngModel)]="secondstageThrust" type="number" placeholder='Enter downward force of engines in N'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='secondstageBurntime' [(ngModel)]="secondstageBurntime" type="number" placeholder='2nd stage burntime in Seconds'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='secondstageMass' [(ngModel)]="secondstageMass" type="number" placeholder='2nd stage Mass'>              
+                </div>
+            </div>
+        </div>
+        <div class='w3-row'>
+            <div class='w3-third'>
+                <label for='name'><b>3rd Stage =></b></label>              
+            </div>
+            <div class='w3-twothird w3-row'>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='thirdstageThrust' [(ngModel)]="thirdstageThrust" type="number" placeholder='Enter downward force of engines in N'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='thirdstageBurntime' [(ngModel)]="thirdstageBurntime" type="number" placeholder='3rd stage burntime in Seconds'>              
+                </div>
+                <div class='w3-third'>
+                    <input class='main-textfield w3-input' id='thirdstageMass' [(ngModel)]="thirdstageMass" type="number" placeholder='3rd stage Mass'>              
+                </div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:right;margin-top:20px;">
+          <a class='button' (click)="rocketSelectionScreen('block')">Select Rocket &gt; </a>
+        </div>
+      </div>
+    </div>
+    <div class='select-rocket-container w3-animate-right initiallyHidden' id='rocket-select-screen'>
+      <div class="w3-row">
+        <div class="w3-third" style='height:100%;'>
+            Geosynchronous Satellite Launch Vehicle Mark II (GSLV Mk II) is the largest launch vehicle developed by India, which is currently in operation. This fourth generation launch vehicle is a three stage vehicle with four liquid strap-ons. The indigenously developed cryogenic Upper Stage (CUS), which is flight proven, forms the third stage of GSLV Mk II. From January 2014, the vehicle has achieved four consecutive successes.
+        </div>
+        <div class="w3-third" style='text-align:center'>
+            <img class='selectRocket' src='./assets/gslv.png'>
+            <p class="w3-xxxlarge">
+              <a style='text-decoration:none;cursor:pointer;font-size:30pt;position:relative;bottom:0'><b>&lt;</b></a>
+              GSLV
+              <a style='text-decoration:none;cursor:pointer;font-size:30pt;position:relative;bottom:0'><b>&gt;</b></a>             
+            </p>
+            <a class='button' style='background-color:#09f;color:#000;' (click)="prepareLaunchClicked()">Prepare Launch &gt; </a>
+            
+        </div>
+        <div class="w3-third" style='text-align:right'>
+            <a style='color:#fff;text-decoration:none;cursor:pointer;font-size:30pt;position:relative;bottom:0' (click)="rocketSelectionScreen('none')"><b> &times; </b></a>                         
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+
+/*FIRE ANIMATION*/
+#fireC {
+    width: 1px; height: 160px;
+    position: absolute;
+    left:55px;
+    right:0;
+    bottom:157px;
+    margin:auto;
+    display:none;
+}
+#fireL {
+    width: 1px; height: 160px;
+    position: absolute;
+    left:20px;
+    right:0;
+    bottom:157px;
+    margin:auto;
+    display:none;
+}
+#fireR {
+    width: 1px; height: 160px;
+    position: absolute;
+    left:90px;
+    right:0;
+    bottom:157px;
+    margin:auto;
+    display:none;
+}
+
+/* smoke balls */
+
+.fire span { 
+  display: block;
+	position: absolute;
+	top: 235px; right:370px; margin-left:-20px;
+	height: 0px; width: 0px;
+	border-radius: 35px;
+	left: -14px; opacity: 0;
+    transform: scale(0.2);
+    z-index: 100;
+}
+.fire span .s0,.s2,.s4,.s6,.s8{
+    border: 35px solid #FF8400;    
+}
+.fire span .s1,.s3,.s5,.s7,.s9{
+    border: 35px solid #FFE100;    
+}
+
+
+/* Smoke animation */
+
+@keyframes fireL {
+	0%   { opacity:1;transform: scale(0.1) translate(0, 0) }
+	100% { opacity: 0; transform: scale(1) translate(10px, 90px) }
+}
+
+@keyframes fireR {
+	0%   { opacity:1; transform: scale(0.2) translate(0, 0) }
+	100% { opacity: 0; transform: scale(1) translate(-10px, 90px) }
+}
+
+.fire .s0 { animation: fireL 0.9s 0s infinite }
+.fire .s1 { animation: fireR 0.9s 0.1s infinite }
+.fire .s2 { animation: fireL 0.9s 0.2s infinite }
+.fire .s3 { animation: fireR 0.9s 0.3s infinite }
+.fire .s4 { animation: fireL 0.9s 0.4s infinite }
+.fire .s5 { animation: fireR 0.9s 0.5s infinite }
+.fire .s6 { animation: fireL 0.9s 0.6s infinite }
+.fire .s7 { animation: fireR 0.9s 0.7s infinite }
+.fire .s8 { animation: fireL 0.9s 0.8s infinite }
+.fire .s9 { animation: fireR 0.9s 0.9s infinite }
