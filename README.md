@@ -1,6 +1,24 @@
-# Storm
+# Storm - Simulated Trajectory Of Rocket Mechanics
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+
+
+## About
+
+In STORM we take parameters of rocket from user (mass of rocket,thrust of stages etc) & depending on the parameters we calculate velocity accelaration and all the required values to fly a rocket and display how the rocket will take off 
+
+Right now storm is completely for educational purpose and for those people who want to learn how rockets fly or for someone who want to test his physics knowledge and experiment by putting different values
+
+This project is still in development mode and there are lot of things we are looking forward to add
+
+## How to Run
+
+1. Clone / Download the directory
+2. Open Command Prompt
+3. Install [npm](https://nodejs.org/) and Angular Client `npm install @angular/cli` (ignore if already installed)
+4. type `ng serve`
+5. Navigate to `http://localhost:4200` in your browser
+
 
 ## Development server
 
