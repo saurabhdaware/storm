@@ -177,6 +177,8 @@ export class LaunchComponent implements OnInit {
         skyColor.Four[1] =255 - Math.trunc(this.rocketParams.altitude/1200);
         skyColor.Four[2] = 255 - Math.trunc(this.rocketParams.altitude/2000);
       }
+      
+      
 
       if(iteration==600){
         rocketComponents.smokeL.style.display = 'block';
@@ -184,6 +186,8 @@ export class LaunchComponent implements OnInit {
         rocketComponents.fireR.style.display = 'block';
         rocketComponents.fireL.style.display = 'block';
       }
+      
+      
 
       if(iteration == 1000){
         setTimeout(()=>{
@@ -193,31 +197,50 @@ export class LaunchComponent implements OnInit {
         },1500)
         rocketComponents.fireC.style.display = 'block';
       }
+      
+      
 
       if(this.counterVars.sec>0 && this.counterVars.sign =='+'){
         this.LaunchService.Launch(this.rocketParams,rocketComponents);
       }
+      
+      
 
       if(this.rocketParams.altitude > 20000 && this.rocketParams.inclination<90){
         this.LaunchService.rocketInclination(this.rocketParams);
       }
+      
+      
 
       if(iteration == this.strapons.burntime*100){
         mass = this.rocketPayloadMass - (this.strapons.mass+this.firststage.mass);
         currentThrust = this.secondstage.thrust;
       }
+      
+      
+      
+      
       if(iteration > this.strapons.burntime*100){
         this.LaunchService.stage1Separation(this.rocketParams,this.counterVars);
       }
+      
+      
+      
 
       if(iteration == (this.strapons.burntime+this.secondstage.burntime)*100){
         mass = this.rocketPayloadMass - (this.strapons.mass+this.firststage.mass+this.secondstage.mass+10);
         currentThrust = this.thirdstage.thrust;
       }
+      
+      
+      
       if(iteration > (this.secondstage.burntime+this.strapons.burntime)*100){
         this.LaunchService.stage2Separation(this.rocketParams,rocketComponents);
       }
-
+      
+      
+      
+      
       if(iteration == (this.strapons.burntime+this.secondstage.burntime+this.thirdstage.burntime)*100){
         mass = this.rocketPayloadMass - (this.strapons.mass+this.firststage.mass+this.secondstage.mass+10);
         currentThrust = this.thirdstage.thrust;
@@ -225,17 +248,27 @@ export class LaunchComponent implements OnInit {
         // this.rocketParams.velocityV = 0;
         // this.rocketParams.altitude = 0;//
       }
+      
+      
+      
+      
       if(iteration > (this.thirdstage.burntime+this.secondstage.burntime+this.strapons.burntime)*100){
         this.LaunchService.stage3Separation(this.rocketParams,rocketComponents);
       }
+      
+      
+      
 
       if(iteration > (this.strapons.burntime+60)*100){
         mass = this.rocketPayloadMass - (this.strapons.mass + this.firststage.mass)
         this.LaunchService.stage4Separation(this.rocketParams,rocketComponents);
       }
 
+      
 
     },10)
+    
+    
     }
 
 }
