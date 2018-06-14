@@ -1,112 +1,112 @@
 .launch-container{
-    height:100%;
-    width:100%;
-    position:fixed;
-    overflow:hidden;
-    /* background:linear-gradient(to bottom right,#09f,#fff); */
-    background-size:cover;
-    background-position:bottom;
-    /* display:none; */
+height:100%;
+width:100%;
+position:fixed
+overflow:hidden;
+/* background:linear-gradient(to bottom right,#09f,#fff); */
+background-size:cover;
+background-position:bottom;
+/* display:none; */
 }.launch-rocket-image-stage1{
-    position:absolute;
-    bottom:50px;
-    left:55px;right:0;
-    margin:auto;
-    height:150px;
+position:absolute;
+bottom:50px;
+left:55px;right:0;
+margin:auto;
+height:150px;
 }.launch-rocket-image-stage2{
-    position:absolute;
-    bottom:199px;
-    left:55px;right:0;
-    margin:auto;
-    height:80px;
+position:absolute;
+bottom:199px;
+left:55px;right:0;
+margin:auto;
+height:80px;
 }.launch-rocket-image-stage3{
-    position:absolute;
-    bottom:278px;
-    left:55px;right:0;
-    margin:auto;
-    height:70px;
+position:absolute;
+bottom:278px;
+left:55px;right:0;
+margin:auto;
+height:70px;
 }.launch-rocket-image-stage4{
-    position: absolute;
-    bottom:321px;
-    left:0;right:0;
-    margin:auto;
-    height:100px;
-    width:100px;
-    display:inline-block;
+position: absolute;
+bottom:321px;
+left:0;right:0;
+margin:auto;
+height:100px;
+width:100px;
+display:inline-block;
 }.launch-rocket-image-stage4L{
-    position: relative;
-    bottom:0 !important;
-    left:58px;right:0;
-    margin:auto;
-    height:73px;
+position: relative;
+bottom:0 !important;
+left:58px;right:0;
+margin:auto;
+height:73px;
 }.launch-rocket-image-stage4R{
-    position:relative;
-    bottom:0 !important;
-    left:48px;right:0;
-    margin:auto;
-    height:73px;
+position:relative;
+bottom:0 !important;
+left:48px;right:0;
+margin:auto;
+height:73px;
 }.launch-rocket-image-sat{
-    position:absolute;
-    bottom:345px !important;
-    left:55px;right:0;
-    margin:auto;
-    height:50px;
-    z-index:-1;
+position:absolute;
+bottom:345px !important;
+left:55px;right:0;
+margin:auto;
+height:50px;
+z-index:-1;
 }.rocketAndSmokeFire{
-    position:absolute;
-    left:0;right:0;
-    margin:auto;
-    bottom:180px;
-    height:480px;
-    width:700px;
-    /* background: #FFE100; */
-    /* opacity:0.9; */
-    z-index:1;
-    display:inline-block !important;
+position:absolute;
+left:0;right:0;
+margin:auto;
+bottom:180px;
+height:480px;
+width:700px;
+/* background: #FFE100; */
+/* opacity:0.9; */
+z-index:1;
+display:inline-block !important;
 }.black-overlay{
-    height:100%;
-    width:100%;
-    position:absolute;
-    z-index:100;
-    background:rgba(0,0,0,0.7);
-    display:none;
+height:100%;
+width:100%;
+position:absolute;
+z-index:100;
+background:rgba(0,0,0,0.7);
+display:none;
 }#countdown{
-    position:absolute;
-    right:0;
-    width:230px;
-    top:10px;
-    z-index:100;
-    padding:20px;
-    background:rgba(0,0,0,0.7);
-    border-left:3px solid #fff;
-    border-top:2px solid #000;
-    border-bottom:2px solid #000; 
-    opacity:1;
-    color:#fff;
+position:absolute;
+right:0;
+width:230px;
+top:10px;
+z-index:100;
+padding:20px;
+background:rgba(0,0,0,0.7);
+border-left:3px solid #fff;
+border-top:2px solid #000;
+border-bottom:2px solid #000; 
+opacity:1;
+color:#fff;
 }#altitude{
-    position:absolute;
-    right:0;
-    width:230px;
-    top:100px;
-    z-index:100;
-    padding:20px;
-    background:rgba(0,0,0,0.7);
-    border-left:3px solid #fff;
-    border-top:2px solid #000;
-    border-bottom:2px solid #000; 
-    opacity:1;
-    color:#fff;
+position:absolute;
+right:0;
+width:230px;
+top:100px;
+z-index:100;
+padding:20px;
+background:rgba(0,0,0,0.7);
+border-left:3px solid #fff;
+border-top:2px solid #000;
+border-bottom:2px solid #000; 
+opacity:1;
+color:#fff;
 }#velocity{
-    position:absolute;
-    right:0;
-    width:230px;
-    top:240px;
-    z-index:100;
-    padding:20px;
-    background:rgba(0,0,0,0.7);
-    border-left:3px solid #fff;
-    border-top:2px solid #000;
-    border-bottom:2px solid #000; 
-    opacity:1;
-    color:#fff;
+position:absolute;
+right:0;
+width:230px;
+top:240px;
+z-index:100;
+padding:20px;
+background:rgba(0,0,0,0.7);
+border-left:3px solid #fff;
+border-top:2px solid #000;
+border-bottom:2px solid #000; 
+opacity:1;
+color:#fff;
 }
